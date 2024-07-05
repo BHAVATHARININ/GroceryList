@@ -1,0 +1,103 @@
+.main {
+    background-color: #895061;
+    flex: 1; /* Fill remaining space */
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    font-family: cursive;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #895061;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: cursive;
+}
+
+.grocery-wrapper {
+    background-color: #78244C; /* White background */
+    padding: 20px; /* Padding inside the box */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slight shadow */
+    display: flex; /* Flexbox for internal alignment */
+    flex-direction: row; /* Horizontal stacking */
+    gap: 20px; /* Space between child elements */
+    width: auto; /* Width adapts to content */
+    min-width: 300px; /* Minimum width to prevent overlap */
+    max-width: 100%; /* Ensure it doesn't overflow */
+    overflow: hidden; /* Prevent overflow issues */
+}
+
+.dropdown, .selectedcategory, .selectedproducts {
+    flex: 1; /* Take equal space */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.dropdown {
+    min-width: 150px; /* Ensure the dropdown is wide enough */
+    font-family: cursive;
+}
+
+.dropdown select {
+    background-color: #59253A; /* Change background color */
+    color: #E3E2DF; /* Change text color */
+    padding: 8px 12px; /* Adjust padding for better appearance */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Add border radius for rounded corners */
+    font-size: 16px; /* Adjust font size */
+    width: 100%; /* Full width */
+    box-sizing: border-box; /* Include padding and border in width */
+    min-width: 100%; /* Ensure dropdown is fully visible */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.selectedcategory, .selectedproducts {
+    background-color: #59253A;; /* Light background */
+    padding: 10px; /* Padding for content */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+    min-width: 150px; /* Ensure each section is wide enough */
+    overflow: hidden;
+    box-sizing: border-box;
+    color: white;
+}
+
+.product-checkbox {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    margin-bottom: 5px; 
+    background-color: #59253A;; /* White background */
+    color: white;
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+    width: 90%;
+}
+
+.product-checkbox input {
+    margin-right: 10px; 
+}
+
+.selectedcategory ul, .selectedproducts ul {
+    padding: 0; /* Remove default padding */
+    list-style: none; /* Remove bullets */
+}
+
+.selectedcategory ul li, .selectedproducts ul li {
+    margin-bottom: 5px; /* Space between list items */
+}
+.cattitle {
+    text-transform: uppercase;   
+}
+.glist {
+    text-transform: uppercase;
+}
